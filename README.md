@@ -19,7 +19,7 @@ Below is a diagrammatic representation of the important classes and how they int
  
 **BootStrap**: Main class which acts as the bootstrap server and maintains the ip address and status of all the nodes in the CAN 
 
-**BootStrapThread**: Whenever any peer requests a connection to the BootStrap(either to join the CAN or to get all active node names for displaying the node info), the BootStrap creates a separate thread for the peer to process it’s request. The bootstrap maintains a hash map with the folloeing information about each node:
+**BootStrapThread**: Whenever any peer requests a connection to the BootStrap(either to join the CAN or to get all active node names for displaying the node info), the BootStrap creates a separate thread for the peer to process it’s request. The bootstrap maintains a hash map with the following information about each node:
 
 1.	NodeID
 2.	Ip Address
