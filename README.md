@@ -1,6 +1,6 @@
 # Content_Addressable_Network
 A Distributed Hash Table (DHT) helps searching for a file efficiently with a keyword in peer-to-peer (p2p) networks. Those DHT-based p2p networks are referred to as structured p2p networks. Content Addressable Network(CAN) is one such implementation of a DHT based peer-to-peer distributed system. This implementation is based on the following paper by S Ratnasamy et al.:
-[I'm an inline-style link]conferences.sigcomm.org/sigcomm/2001/p13-ratnasamy.pdf
+(conferences.sigcomm.org/sigcomm/2001/p13-ratnasamy.pdf)
 
 ##Commands:
 i) **join me**: A request is sent to the bootstrap from a joining node. The bootstrap randomly chooses a node already in the CAN and routes this request to this node. This node then randomly chooses co-ordinates within the CAN. If these co-ordinates lie within this node itself, the node splits and transmits necessary state information to the joining node. Otherwise, all the neighbours are checked to find the closest one to the destination co-ordinates. The information is relayed to this peer and thus the relaying continues till the appropriate zone is discovered.
